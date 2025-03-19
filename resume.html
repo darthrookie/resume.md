@@ -124,71 +124,86 @@ h1 + ul + p {
 <body>
 <div id="resume">
 <!-- The (first) h1 will be used as the <title> of the HTML page -->
+
 <h1>Jose Carlos Gallegos Mariscal</h1>
-<!-- The unordered list immediately after the h1 will be formatted on a single
-line. It is intended to be used for contact details -->
+<!-- The unordered list immediately after the h1 will be formatted on a single line. It is intended to be used for contact details -->
+
 <ul>
 <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#103;&#46;&#106;&#115;&#99;&#97;&#114;&#108;&#111;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#105;&#110;&#103;&#46;&#106;&#115;&#99;&#97;&#114;&#108;&#111;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
 <li>+52 (646) 106-4383</li>
 <li>Ensenada, Baja California, MX</li>
 </ul>
-<!-- The paragraph after the h1 and ul and before the first h2 is optional. It
-is intended to be used for a short summary. -->
-<p>I am a Software Engineer with experience in embedded systems, wireless communications, server-side services, operative systems, and computer hardware interfaces. I&rsquo;ve worked with multiple chip vendors using a variety of architectures, from which ARM-Cortex M has been the main focus. I&rsquo;ve helped get consumer products from design to launch, while mainly being involved in the software side of things I&rsquo;ve also helped with hardware design and troubleshooting.</p>
+<!-- The paragraph after the h1 and ul and before the first h2 is optional. It is intended to be used for a summary. -->
+
+<p>I am a Software Engineer with experience in embedded systems, wireless communications, microservices, real-time operative systems, and hardware interfaces. I&rsquo;ve worked with a wide range of chip vendors using a variety of CPU architectures, from which ARM-Cortex has been my main focus. I&rsquo;ve helped get consumer products from design to launch, while mainly being involved in the software side of things I&rsquo;ve also helped with hardware design and troubleshooting.</p>
 <h2>Experience</h2>
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
-<h3><span>Software Engineer, Ubilogix</span> <span>2014 &ndash; Present</span></h3>
+
+<h3><span>Software Engineer, Ubilogix</span>  <span>2014 &ndash; 2024</span></h3>
 <ul>
-<li>Multiple projects developing for ARM-based MCUs.</li>
-<li>Work with communications protocols such as ZigBee, BLE, ANT+, Matter, TCP/IP, HTTP, MQTT, and LwM2M.</li>
+<li>Multiple projects developing for ARM-based MCUs in C/C++.</li>
+<li>Work with communications protocols such as ZigBee, BLE, ANT+, Matter, TCP/IP, HTTP, MQTT, LwM2M, and others.</li>
 <li>Experience with hardware and firmware debugging techniques.</li>
-<li>Experience with wireless communications stacks from different vendors.</li>
+<li>Experience with wireless communications stacks from different chip vendors.</li>
 <li>IoT product to cloud API design experience.</li>
 <li>Experience with OS building tools like Yocto and LFS.</li>
-<li>Work with cloud services such as AWS, Digital Ocean, and multiple private services.</li>
+<li>Work with cloud services such as AWS IoT, Digital Ocean, and multiple private services.</li>
 <li>Team leader and client interaction.</li>
 </ul>
-<h3><span>Adjunct Professor, Autonomous University of Baja California</span> <span>2017 &ndash; Present</span></h3>
+<h3><span>Adjunct Professor, Autonomous University of Baja California</span>  <span>2017 &ndash; Present</span></h3>
 <ul>
-<li>Teach Programming Paradigms subject.</li>
-<li>Teach Digital Technologies for Innovation subject.</li>
-<li>Teach Web Application Development subject in the master&rsquo;s program.</li>
-<li>Part of the Bachelor of Informatics, Bachelor of Business Intelligence, and Bachelor of Software Engineering academias.</li>
+<li>Teach <em>programming paradigms</em> as a subject using C/C++, Python, Prolog, and SML.</li>
+<li>Teach <em>digital technologies for innovation</em> as a subject using Python.</li>
+<li>Teach <em>web application development</em> as a subject in the master&rsquo;s program using Python and Django.</li>
+<li>Teach <em>embedded systems</em> as a subject in the master&rsquo;s program using embedded C, STM32, ESP32, and Nordic.</li>
 </ul>
 <h2>Projects</h2>
 <h3><span>Multiplayer wearable toy</span></h3>
 <ul>
-<li>Design a proprietary personal area network protocol to work concurrently with BLE to communicate up to 16 devices.</li>
+<li>Design a proprietary PAN protocol to work concurrently with BLE to communicate up to 16 devices.</li>
 <li>Development firmware for an ARM Cortex-M and BLE radio MCU.</li>
 <li>Worked with a major entertainment conglomerate engineering team and helped with product design.</li>
 </ul>
 <h3><span>Consumer portable device</span></h3>
 <ul>
-<li>Helped with the hardware and software from design to market of a consumer product.</li>
-<li>Implemented multiple kernel drivers and main application.</li>
-<li>Design and implementation of a BLE service to communicate with a mobile app.</li>
+<li>Helped with the hardware and software from design to market of this consumer product.</li>
+<li>Implemented multiple Linux kernel drivers in C and the main application in Golang.</li>
+<li>Designed and implemented a BLE service to communicate with a mobile app.</li>
 <li>Use Yocto to create a custom Linux image for the product.</li>
+</ul>
+<h3><span>Dongle management solution</span></h3>
+<ul>
+<li>Implementation was made using Golang for multiplatform deployment</li>
+<li>Service made use of gRPC and protocol buffers to communicate with clients</li>
+<li>Service also made use of Kafka to communicate with subscribers and report events or broadcast</li>
+<li>Implement a service to find and share data between multiple dongle management microservices in a P2P network, this service was deployed in Digital Ocean as a docker container</li>
+</ul>
+<h3><span>Device management network</span></h3>
+<ul>
+<li>Implementation of an IoT device using cellular communications, MQTT and LwM2M protocols</li>
+<li>The project made use of AWS IoT service to provision and manage the devices using both LwM2M and MQTT</li>
 </ul>
 <h3><span>In-house protocol analyzer team lead</span></h3>
 <ul>
-<li>Manage the team in charge of Ubiqua Protocol Analyzer.</li>
-<li>Implemented the service that manages the hardware interfaces.</li>
-<li>
-<p>Implemented an agile software development methodology to track progress and software quality.</p>
-</li>
-<li>
-<p><strong>Multitude of other in-house and consulting projects at Ubilogix</strong></p>
-</li>
+<li>Led the team in charge of developing a Protocol Analyzer in .Net/C#</li>
+<li>Management of the Digital Ocean droplets to support backend services for licensing using Docker and Kubernetes</li>
+<li>Management of the team repositories enabling CI/CD for testing and deployment using Gitlab CI</li>
+</ul>
+<h3><span>Multitude of other in-house and consulting projects leveraging different technologies</span></h3>
+<ul>
+<li>Management of the external repositories using GitHub actions with Jenkins to enable CI/CD and Jekyll to handle documentation</li>
+<li>Developed an app in .Net/C# to handle hardware events in Windows systems</li>
+<li>Developed a backend service in Golang using Kafka to capture hardware events from multiple Windows clients</li>
 </ul>
 <h2>Education</h2>
-<h3><span>Autonomous University of Baja California, Master of Engineering</span> <span>2012 &ndash; 2015</span></h3>
+<h3><span>Autonomous University of Baja California, Master of Engineering</span>  <span>2012 &ndash; 2015</span></h3>
 <ul>
-<li>Focus on wireless communication and electronic instrumentation.</li>
-<li>The project consisted of a web service, GSM communications, and an IEEE802.15.4 network.</li>
-<li>The target was to monitor environmental variables for crop management.</li>
+<li>The field of study was wireless communication and electronic instrumentation.</li>
+<li>The topic was a web service implemented in Python with GSM communications, and an adjacent IEEE802.15.4 network capturing environmental data.</li>
+<li>The target was to monitor environmental variables for crop management and optimization.</li>
 </ul>
-<h3><span>Autonomous University of Baja California, Bachelor&rsquo;s in Computer Engineering</span> <span>2007 &ndash; 2011</span></h3>
+<h3><span>Autonomous University of Baja California, Bachelor&rsquo;s in Computer Engineering</span>  <span>2007 &ndash; 2011</span></h3>
 <ul>
 <li>Scholar merit of the XXVI generation of computer engineering.</li>
 <li>Honorable mention-well.</li>
@@ -197,9 +212,9 @@ hand -->
 <h2>Skills</h2>
 <ul>
 <li><strong>Languages:</strong> C, C++, Golang, Python, JS, Rust, SQL.</li>
-<li><strong>Embedded:</strong> Experience with SDKs from STMicro, Nordic, TI, NXP, Espressif, SiLabs. Experience with Yocto, LFS, FreeRTOS, Zephyr.</li>
-<li><strong>Technical Skills:</strong> Coding, debugging, data modeling, version control systems, CI/CD, Cross-compiling, GNU dev tools.</li>
-<li><strong>Wireless communications:</strong> ZigBee, BLE, ANT+, Matter, TCP/IP, HTTP, MQTT, and LwM2M.</li>
+<li><strong>Embedded:</strong> Experience with SDKs from STMicro, Nordic, TI, NXP, Espressif, and SiLabs. Experience with Yocto, LFS, FreeRTOS, and Zephyr.</li>
+<li><strong>Technical Skills:</strong> Coding, debugging, data modeling, version control systems, CI/CD, Cross-compiling, and GNU dev tools.</li>
+<li><strong>Wireless communications:</strong> ZigBee, BLE, ANT+, Matter, TCP/IP, HTTP, gRPC, MQTT, and LwM2M.</li>
 <li><strong>Hardware peripherals:</strong> USB, UART, I2C, SPI, CAN, SWD, JTAG.</li>
 <li><strong>Web and mobile:</strong> Django, Flask, Vue, Flutter.</li>
 <li><strong>Skills:</strong> Self-driven, collaborative, critical thinking, detail-oriented, team leadership and management.</li>
